@@ -1,0 +1,10 @@
+
+.line-web {
+  fill: none;
+  position: absolute;
+  width: 100%;
+  stroke: rgb(185, 185, 185) !important;
+  opacity: .15;
+  top: -0px;
+}
+
