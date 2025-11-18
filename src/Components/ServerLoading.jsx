@@ -1,4 +1,4 @@
-import logo from '../assets/portoDark.svg'
+import logo from '../assets/portodark.svg'
 
 const ServerLoading = () => {
     return (
