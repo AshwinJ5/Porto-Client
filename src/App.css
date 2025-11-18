@@ -267,7 +267,7 @@ a .tagsMain .Tagdiv {
 .headerGradient {
     background: linear-gradient(to right, red, rgb(64, 0, 255));
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 .headerMain{
     position: relative;
@@ -735,4 +735,40 @@ a .tagsMain .Tagdiv {
 .addNewBlogButton{
     max-width: 50%;
     position: relative;
+}
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  gap: 15px;
+}
+
+/* Smooth zoom-in & zoom-out for image */
+.loading-logo {
+  width: 100px; /* adjust size if needed */
+  animation: zoomPulse 2s ease-in-out infinite;
+}
+
+@keyframes zoomPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.loading-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #ff0000, #77ff00, #2b00ff, #ff0000, #77ff00);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+animation: colorSlide 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes colorSlide {
+  100% { background-position: 0% 50%; }
+  0% { background-position: 100% 50%; }
 }

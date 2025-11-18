@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { getAllTagAPI } from '../Services/allApi'
 import { useState } from 'react'
@@ -22,8 +21,8 @@ function PopularTags() {
             <h4 >Popular Tags</h4>
             <div className="tagFlex">
                 {
-                    allTags.map(tag=>(
-                        <div className="tagsMain d-flex">
+                    allTags?.map((tag, index)=>(
+                        <div key={index} className="tagsMain d-flex">
                     <div><img src={tag.imgUrl} alt="imgTag1" /></div>
                     <div className='px-3'>
                         <div className='tagFirst'>{tag.tagname}</div>

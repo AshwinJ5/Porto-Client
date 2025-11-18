@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import { addNewBlogAPI } from '../Services/allApi';

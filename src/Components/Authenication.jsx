@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { loginAPI, registerAPI } from '../Services/allApi';
 import { useNavigate } from 'react-router-dom';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
@@ -93,11 +93,11 @@ const handleLogin= async(e)=>{
                   <input  onChange={(e)=>setUserData({...userData,email:e.target.value})} value={userData.email} type="email" placeholder="Email" />
                 </div>
                 <div className="input-group">
-                <i class="fa-solid fa-lock"></i>
+                <i className="fa-solid fa-lock"></i>
                 <input type="password"  onChange={(e) => setTempPassword(e.target.value)} value={tempPassword} placeholder="Password" />
                 </div>
                 <div className="input-group">
-                <i class="fa-solid fa-eye-slash"></i>
+                <i className="fa-solid fa-eye-slash"></i>
                   <input  onChange={(e)=>setUserData({...userData,password:e.target.value})} value={userData.password} type="password" placeholder="Confirm password" />
                 </div>
                 <button onClick={handleRegister}>Sign up</button>
@@ -116,11 +116,11 @@ const handleLogin= async(e)=>{
             <div className="form-wrapper align-items-center">
               <div className="form sign-in">
                 <div className="input-group">
-                <i class="fa-solid fa-user"></i>
+                <i className="fa-solid fa-user"></i>
                   <input type="text" placeholder="Email" onChange={(e)=>setUserData({...userData,email:e.target.value})} value={userData.email} />
                 </div>
                 <div className="input-group">
-                <i class="fa-solid fa-lock"></i>
+                <i className="fa-solid fa-lock"></i>
                   <input type="password" placeholder="Password"  onChange={(e)=>setUserData({...userData,password:e.target.value})} value={userData.password}/>
                 </div>
                 <button onClick={handleLogin}>Sign in</button>
@@ -128,7 +128,7 @@ const handleLogin= async(e)=>{
                   <b>Forgot password?</b>
                 </p> */}
                 <p>
-                  <span>Don't have an account?</span>
+                  <span>{"Don't have an account?"}</span>
                   <b onClick={toggle} className="pointer ms-2">
                     Sign up here
                   </b>

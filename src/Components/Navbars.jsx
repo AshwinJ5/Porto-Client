@@ -1,10 +1,6 @@
-import React  from 'react'
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../assets/portoDark.svg'
 
 
@@ -37,7 +33,7 @@ function Navbars() {
             style={{ maxHeight: '120px' }}
             navbarScroll
           >
-            <div className='my-auto '  href="#action1"><i className="fa-solid fa-moon"></i></div>
+            {/* <div className='my-auto '  href="#action1"><i className="fa-solid fa-moon"></i></div> */}
             {/* <Nav.Link className='my-auto' href="#action2">Sign In</Nav.Link> */}
             <a className='my-auto mx-3' href="/sign" >
               <div className="navNtn fw-bolder px-4 my-auto">Sign In</div>

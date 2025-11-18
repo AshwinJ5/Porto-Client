@@ -1,4 +1,3 @@
-import React from 'react'
 import '../App.css'
 import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit'
 import { getAllBlogAPI } from '../Services/allApi';
@@ -29,7 +28,7 @@ function Blogs() {
 
         <div className="featuredIcon mt-5 ms-4 px-4 small">{allBlog[7]?.tag}</div>
         <div className='blogHeading'>{allBlog[7]?.blogTitle}</div>
-        <div><i class="fa-solid me-2 fa-calendar-days"></i>{allBlog[7]?.date} <i class="fa-regular mx-2 fa-clock"></i> {allBlog[7]?.time}</div>            
+        <div><i className="fa-solid me-2 fa-calendar-days"></i>{allBlog[7]?.date} <i className="fa-regular mx-2 fa-clock"></i> {allBlog[7]?.time}</div>            
         </div>
             </div>
             <div className="col-lg-8 mx-auto">
@@ -126,7 +125,7 @@ function Blogs() {
             <div className="h3 fw-bolder mt-5">You might also like</div>
             <div className="col-lg-3 col-6">
                 <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&ixlib=rb-4.0.3&q=80&w=2000" className='my-3 mx-auto blogImage' alt="" />
-                <div className='h5 fw-bold'>Don't listen to what they say, go see</div>             
+                <div className='h5 fw-bold'>{"Don't listen to what they say, go see"}</div>             
             </div>
             <div className="col-lg-3 col-6">
             <img src="https://images.unsplash.com/photo-1664574652984-5b5f769bef07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wxfDF8YWxsfDE2fHx8fHx8Mnx8MTY3MTQzMDcxMQ&ixlib=rb-4.0.3&q=80&w=2000" className='my-3 mx-auto blogImage' alt="" />

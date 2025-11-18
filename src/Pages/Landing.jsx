@@ -1,4 +1,3 @@
-import React from 'react'
 import PopularTags from '../Components/PopularTags'
 import Featured from '../Components/Featured'
 import LandingPosts from '../Components/LandingPosts'

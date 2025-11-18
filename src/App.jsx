@@ -16,25 +16,66 @@ import AuthorDetails from './Components/AuthorDetails.jsx';
 import Features from './Components/Features.jsx';
 import Authenication from './Components/Authenication.jsx';
 import AddNewBlog from './Components/AddNewBlog.jsx';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { checkServer } from './Services/commonAPI.js';
+import ServerLoading from './Components/ServerLoading.jsx';
 
 function App() {
+  const [serverState, setServerState] = useState("checking");
+
+  useEffect(() => {
+    const alreadyActive = sessionStorage.getItem("serverStatus");
+    if (alreadyActive === "active") {
+      setServerState("active");
+      return;
+    }
+
+    checkServer().then((state) => {
+      if (state === "active") {
+        sessionStorage.setItem("serverStatus", "active");
+        setServerState("active");
+      } else {
+        const interval = setInterval(async () => {
+          const retryState = await checkServer();
+          if (retryState === "active") {
+            sessionStorage.setItem("serverStatus", "active");
+            setServerState("active");
+            clearInterval(interval);
+          }
+        }, 3000);
+        return () => clearInterval(interval);
+      }
+    });
+  }, []);
+
+
+
+  if (serverState !== "active") {
+    return (
+      <>
+        <ServerLoading />
+      </>
+    );
+  }
+
 
   return (
     <>
-    <Navbars/>
-      <SvgBackground/>
-        <Routes>
-          <Route path='/' element={<Landing/>}/>
-          <Route path='/blogs' element={<Blogs/>}/>
-          <Route path='/tags' element={<Tags/>}/>
-          <Route path='/authors' element={<Authors/>}/>
-          <Route path='/authorsdetails' element={<AuthorDetails/>}/>
-          <Route path='/features' element={<Features/>}/>
-          <Route path='/sign' element={<Authenication/>}/>
-          <Route path='/addnew' element={<AddNewBlog/>}/>
-        </Routes>
-      <Suscribe/>
-      <Footer/>
+      <Navbars />
+      <SvgBackground />
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/tags' element={<Tags />} />
+        <Route path='/authors' element={<Authors />} />
+        <Route path='/authorsdetails' element={<AuthorDetails />} />
+        <Route path='/features' element={<Features />} />
+        <Route path='/sign' element={<Authenication />} />
+        <Route path='/addnew' element={<AddNewBlog />} />
+      </Routes>
+      <Suscribe />
+      <Footer />
     </>
   )
 }

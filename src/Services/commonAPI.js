@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+import {SERVER_URL} from "./serverurl"
 export const commonAPI= async(httpRequest,url,reqBody,reqHeader)=>{
 
     const reqConfig={
@@ -15,4 +15,13 @@ export const commonAPI= async(httpRequest,url,reqBody,reqHeader)=>{
     ).catch((err)=>{
         return err
     })
+}
+
+export async function checkServer() {
+  try {
+        const res = await fetch(`${SERVER_URL}/health`);
+  if (res.ok) return "active";
+  } catch {
+    return "waking";
+  }
 }

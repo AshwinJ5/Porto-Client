@@ -1,4 +1,3 @@
-import React from 'react'
 
 function AuthorDetails() {
   return (
@@ -10,7 +9,7 @@ function AuthorDetails() {
                 <div className="authorDetailImage">
                         <img src="https://pixahive.com/wp-content/uploads/2020/10/A-beautiful-girl-portrait-125229-pixahive.jpg" alt="" />
                         <div className="mt-3 fw-bolder  fs-3 text-center">Dona</div>
-                        <div className="mb-3 small  text-center"> <i class="fa-solid me-2 fa-list"></i>8 Posts <i class="fa-solid ms-5 me-2 fa-location-dot"></i>India</div>
+                        <div className="mb-3 small  text-center"> <i className="fa-solid me-2 fa-list"></i>8 Posts <i className="fa-solid ms-5 me-2 fa-location-dot"></i>India</div>
                         <div className="authorAbout fs-4">
                         Dona is UI & UX designer by profession, photographer by passion. Solo traveller, blogger, badminton player and movie lover.
                         </div>
@@ -31,7 +30,7 @@ function AuthorDetails() {
                     <p className=' text-justify'>
                     She then expatiated very warmly upon the advantages I should reap from her plan; talked in a high style of my future grandeur; assured me how heartily I should despise almost every body and...
                     </p>
-                    <div><i class="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
+                    <div><i className="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
                 </div>
                 </div>
                 
@@ -47,7 +46,7 @@ function AuthorDetails() {
                     <p className=' text-justify'>
                     She then expatiated very warmly upon the advantages I should reap from her plan; talked in a high style of my future grandeur; assured me how heartily I should despise almost every body and...
                     </p>
-                    <div><i class="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
+                    <div><i className="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6  p-4 col-12">
@@ -62,7 +61,7 @@ function AuthorDetails() {
                     <p className=' text-justify'>
                     She then expatiated very warmly upon the advantages I should reap from her plan; talked in a high style of my future grandeur; assured me how heartily I should despise almost every body and...
                     </p>
-                    <div><i class="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
+                    <div><i className="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6  p-4 col-12">
@@ -77,7 +76,7 @@ function AuthorDetails() {
                     <p className=' text-justify'>
                     She then expatiated very warmly upon the advantages I should reap from her plan; talked in a high style of my future grandeur; assured me how heartily I should despise almost every body and...
                     </p>
-                    <div><i class="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
+                    <div><i className="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6  p-4 col-12">
@@ -92,7 +91,7 @@ function AuthorDetails() {
                     <p className=' text-justify'>
                     She then expatiated very warmly upon the advantages I should reap from her plan; talked in a high style of my future grandeur; assured me how heartily I should despise almost every body and...
                     </p>
-                    <div><i class="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
+                    <div><i className="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6  p-4 col-12">
@@ -107,7 +106,7 @@ function AuthorDetails() {
                     <p className=' text-justify'>
                     She then expatiated very warmly upon the advantages I should reap from her plan; talked in a high style of my future grandeur; assured me how heartily I should despise almost every body and...
                     </p>
-                    <div><i class="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
+                    <div><i className="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6  p-4 col-12">
@@ -122,7 +121,7 @@ function AuthorDetails() {
                     <p className=' text-justify'>
                     She then expatiated very warmly upon the advantages I should reap from her plan; talked in a high style of my future grandeur; assured me how heartily I should despise almost every body and...
                     </p>
-                    <div><i class="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
+                    <div><i className="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6  p-4 col-12">
@@ -137,7 +136,7 @@ function AuthorDetails() {
                     <p className=' text-justify'>
                     She then expatiated very warmly upon the advantages I should reap from her plan; talked in a high style of my future grandeur; assured me how heartily I should despise almost every body and...
                     </p>
-                    <div><i class="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
+                    <div><i className="fa-regular fa-clock"></i> <span className='ms-2'>3 mins</span></div>
                 </div>
                 </div>
                 

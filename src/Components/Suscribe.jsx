@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Suscribe() {
   return (
@@ -8,7 +7,7 @@ function Suscribe() {
                 <div className="col-lg-6 headingSuscribe p-5">
                 Subscribe to Porto newsletter and stay updated.
                 <div className="h5 my-3">
-                Don't miss anything. Get all the latest posts delivered straight to your inbox. It's free!
+                {"Don't miss anything. Get all the latest posts delivered straight to your inbox. It's free!"}
                 </div>
                 </div>
                 <div className="col-lg-6 py-4">

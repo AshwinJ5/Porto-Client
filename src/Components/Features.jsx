@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Features() {
   return (
@@ -20,7 +19,7 @@ function Features() {
                 <h1 className='fw-bold text-center my-5'>Supported Inbuilt Features</h1>
                 <ul>
                         <li>Share to social sites.</li>
-                        <li>Post content visibility based on the viewer's membership status.</li>
+                        <li>{"Post content visibility based on the viewer's membership status."}</li>
                         <li>Reading time.</li>
                 </ul>
             </div>

@@ -1,6 +1,4 @@
-import React from 'react'
 import dark from '../assets/portodark.svg'
-import light from '../assets/porto.svg'
 import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit'
 
 
