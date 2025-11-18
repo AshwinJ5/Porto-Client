@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/portodark.svg'
+import { Link } from 'react-router-dom';
 
 
 function Navbars() {
@@ -19,13 +20,13 @@ function Navbars() {
             style={{ maxHeight: '120px' }}
             navbarScroll
           >
-            <Nav.Link href="/features">Our Features</Nav.Link>
-            <Nav.Link href="/authors">Authors</Nav.Link>
-            <Nav.Link href="/tags">Tags</Nav.Link>
+            <Link to="/features">Our Features</Link>
+            <Link to="/authors">Authors</Link>
+            <Link to="/tags">Tags</Link>
             
-            <Nav.Link href="#contact" >
+            <Link href="#contact" >
               Contact
-            </Nav.Link>
+            </Link>
           </Nav>
           <div className="d-block">
           <Nav
@@ -34,7 +35,7 @@ function Navbars() {
             navbarScroll
           >
             {/* <div className='my-auto '  href="#action1"><i className="fa-solid fa-moon"></i></div> */}
-            {/* <Nav.Link className='my-auto' href="#action2">Sign In</Nav.Link> */}
+            {/* <Link className='my-auto' href="#action2">Sign In</Link> */}
             <a className='my-auto mx-3' href="/sign" >
               <div className="navNtn fw-bolder px-4 my-auto">Sign In</div>
             </a>
