@@ -224,14 +224,14 @@ a .tagsMain .Tagdiv {
     padding: 8px 0 8px 0  !important;
     cursor: pointer;
 }
-.nav-link{
+.navbar-collapse a{
     font-size: 1rem !important; 
     color: white !important;
     margin-left: 10px;
     position: relative; 
 }
 
-.nav-link::before {
+.navbar-collapse a::before {
     content: '';
     position: absolute;
     bottom: 0px;
@@ -243,7 +243,7 @@ a .tagsMain .Tagdiv {
     
 }
 
-.nav-link:hover::before {
+.navbar-collapse a:hover::before {
     width: 100% !important; 
     right: auto;
     left: 0;
